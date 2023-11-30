@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a:not(header a) {
+    @apply text-teal-500 underline;
+}
+
+.base-form {
+    @apply max-w-sm grid gap-y-3 [&>div]:grid [&>div>label]:text-sm [&>div]:gap-y-1 [&>div>input]:border [&>div>input]:rounded-md [&>div>input]:p-2
+    [&>div>input]:outline-none focus:[&>div>input]:ring-2 focus:[&>div>input]:ring-offset-2 focus:[&>div>input]:ring-teal-200
+    [&>button[type='submit']]:bg-teal-500 [&>button[type='submit']]:text-sm [&>button[type='submit']]:font-medium [&>button[type='submit']]:text-white
+    [&>button[type='submit']]:p-2.5 [&>button[type='submit']]:rounded-md [&>div>small]:text-red-500 [&>button[type='submit']]:shadow-xl hover:[&>button[type='submit']]:shadow-none
+    [&>div>select]:border [&>div>select]:rounded-md [&>div>select]:p-2 [&>div>select]:outline-none focus:[&>div>select]:ring-2 
+    focus:[&>div>select]:ring-offset-2 focus:[&>div>select]:ring-teal-200 [&>div>select]:appearance-none
+    [&>div>textarea]:border [&>div>textarea]:rounded-md [&>div>textarea]:p-2 [&>div>textarea]:outline-none focus:[&>div>textarea]:ring-2 
+    focus:[&>div>textarea]:ring-offset-2 focus:[&>div>textarea]:ring-teal-200 [&>div>textarea]:resize-none;
+}
+
+.base-table {
+    @apply w-full table-fixed text-left text-sm [&>thead>tr]:bg-teal-500 [&>thead>tr]:text-white [&>thead>tr>th]:py-2.5
+    [&>thead>tr>th]:px-3 [&>tbody>tr>td]:py-2.5 [&>tbody>tr>td]:px-3 [&>tbody>tr]:border-b even:[&>tbody>tr]:bg-teal-100 [&>tbody>tr>td>a]:underline
+    [&>tbody>tr>td>a]:text-teal-500;
+}
+
+.base-row-table {
+    @apply w-full table-fixed text-left text-sm;
+}
+
+em {
+    @apply font-serif;
+}
